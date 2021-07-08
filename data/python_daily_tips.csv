@@ -2616,3 +2616,13 @@ df.sample(frac=1)
 
 #Python https://twitter.com/jonrocher/status/1070007251929157633
 ",karlafej,
+12/31/2018 6:19:03,"#python lists have the count() method that returns the number of occurrences of an element:
+
+>>> lst = [1, 1, 2, 3, 4, 5, 1, 3, 3, 3, 7, 9, 3]
+>>> lst.count(2)
+1
+
+Most common item:
+>>> max(lst, key=lst.count) 
+3 
+",karlafejkkkdkdkkdkkdkkdk,
