@@ -59,7 +59,7 @@ def extract_links_from_tweet(tip: str) -> tuple[list, str]:
     """
     regex = r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
     links = re.findall(regex, tip)
-    new_tweet = re.sub(regex, '', tip)
+    new_tip = re.sub(regex, '', tip)
     return links, new_tip
 
 
@@ -85,6 +85,7 @@ def create_tweets(tweet: dict, timestamp: datetime) -> None:
     new_tweet.author = tweet.get('Your name or Twitter id:')
     new_tweet.timestamp = timestamp
     new_tweet.tip = new_tip
+    new_tweet.published = True if links else False
     new_tweet.save()
     for link in links:
         Link.objects.create(url=link, tweet=new_tweet)

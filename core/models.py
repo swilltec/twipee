@@ -12,6 +12,7 @@ class Tweet(models.Model):
     timestamp = models.DateTimeField(blank=True, null=True)
     tip = models.TextField()
     author = models.CharField(blank=True, null=True, max_length=100)
+    published = models.BooleanField(default=False)
 
     def __str__(self):
         return self.tip

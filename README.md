@@ -18,6 +18,7 @@ This application runs a scheduled job periodically to check and store changes in
 | tip         | String           | Python daily tip body    |
 | timestamp  | Datetime           | Timestamp the tweet was posted on twitter |
 | author | String | The author of the tip|
+| published | Boolean | Published status of tweet |
 
 
 ### Link
