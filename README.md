@@ -38,7 +38,7 @@ This application runs a scheduled job periodically to check and store changes in
   make start
   ```
 NB: 
-Veiw [Makefile] (/Makefile) for more commands
+Veiw [Makefile](Makefile) for more commands
 
 ## Architecture
 This project is divided into three layers of presentation, persistence, and actions or rules
