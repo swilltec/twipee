@@ -38,7 +38,7 @@ This application runs a scheduled job periodically to check and store changes in
   make start
   ```
 NB: 
-Veiw ![Makefile] (./Makefile) for more commands
+Veiw [Makefile] (/Makefile) for more commands
 
 ## Architecture
 This project is divided into three layers of presentation, persistence, and actions or rules
@@ -60,4 +60,4 @@ that data with some set of actions.
     It keeps Django from starting up a second instance which is the default behavior in debug mode. 
     A second instance would mean all scheduled tasks would fire twice.
  -  The app reads data from a local file to stimulate actual data due to the restriction placed on host country on twitter.
-    The [fetch_tweet_csv](.core/utils/process_csv.py) function can easily be modified to fetch real time data from twitter easily
+    The [fetch_tweet_csv](core/utils/process_csv.py) function can easily be modified to fetch real time data from twitter easily
