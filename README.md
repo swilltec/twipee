@@ -8,9 +8,6 @@ This application runs a scheduled job periodically to check and store changes in
 
 ### Tweet
 
- timestamp = models.DateTimeField(blank=True, null=True)
-    tip = models.TextField()
-    author = models.CharField(blank=True, null=True, max_length=10
 
 | Field   | Type             | Description           |
 |-----------------|------------------|-------------------         |
@@ -42,9 +39,8 @@ NB:
 Veiw [Makefile](Makefile) for more commands
 
 ## Architecture
-This project is divided into three layers of presentation, persistence, and actions or rules
-is a common pattern. Some variations on this approach are so common, they’ve been
-given names. Model-view-controller (MVC) is a way of modeling data for persistence,
+This project is divided into three layers of presentation (Template), persistence (Model), and actions or rules (View)
+is a common pattern. Model-view-template (MVT) is a way of modeling data for persistence,
 providing users with a view into that data, and allowing them to control changes to
 that data with some set of actions.
 
