@@ -36,7 +36,8 @@ This application runs a scheduled job periodically to check and store changes in
   make start
   ```
 NB: 
-Veiw [Makefile](Makefile) for more commands
+- View [Makefile](Makefile) for more commands
+- Run project in an isolated python environment (virtualenv, venv, docker, etc)
 
 ## Architecture
 This project is divided into three layers of presentation (Template), persistence (Model), and actions or rules (View)
