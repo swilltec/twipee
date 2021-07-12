@@ -29,11 +29,15 @@ This application runs a scheduled job periodically to check and store changes in
 ## Getting Started
 1. Clone the repo
    ```sh
-   git clone https://github.com/swilltec/twipee/
+      git clone https://github.com/swilltec/twipee/
    ```
-2. Navigate to bookmark directory and run
+2. Install requirements
+    ```sh
+        pip install -r requirements
+     ```
+3. Navigate to bookmark directory and run
   ```sh
-  make start
+     make start
   ```
 NB: 
 - View [Makefile](Makefile) for more commands
